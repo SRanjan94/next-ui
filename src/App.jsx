@@ -3,7 +3,7 @@ import Layouts from "./components/Layouts";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import AboutPage from "./AboutPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Layouts>
         {" "}
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Layouts>
